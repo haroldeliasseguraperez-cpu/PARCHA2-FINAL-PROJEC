@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PARCHA2 · Regalos personalizados · Camacho Carreño</title>
+<meta name="description" content="PARCHA2: regalos personalizados temática F1 y Sanrio, hechos por estudiantes de grado 11 de la Institución Educativa Camacho Carreño, Bucaramanga.">
+<meta name="theme-color" content="#3b2416">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Great+Vibes&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#3b2416;--beige:#d2c9bc;--beige-l:#ebe5dc;--taupe:#a9a08e;--pink:#fbdde7;--pink-d:#8a2f58;--white:#fff;
+--serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;--body:"Lora",Georgia,serif;--script:"Great Vibes","Brush Script MT",cursive}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:100%}
+body{margin:0;background:var(--beige);color:var(--ink);font-family:var(--body);font-size:1.125rem;line-height:1.7}
+img{max-width:100%;display:block}
+a{color:var(--pink-d);text-underline-offset:.2em}
+a:hover{color:var(--ink)}
+:focus-visible{outline:4px solid var(--pink-d);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:1rem;top:-5rem;background:var(--ink);color:#fff;padding:.8rem 1.2rem;z-index:100;border-radius:0 0 8px 8px}
+.skip:focus{top:0}
+.wrap{max-width:1100px;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{font-family:var(--serif);line-height:1.15;margin:0 0 .6rem;color:var(--ink)}
+h1{font-size:clamp(3.2rem,12vw,6.5rem);letter-spacing:.06em;font-weight:700}
+h1 sup{color:var(--pink-d);font-size:.6em}
+h2{font-size:clamp(2.2rem,6vw,3.2rem);text-align:center;font-weight:700}
+h2::after{content:"";display:block;width:90px;height:2px;background:var(--ink);margin:.7rem auto 0}
+h3{font-size:1.6rem}
+.script{font-family:var(--script);font-size:clamp(2rem,6vw,3.2rem);color:var(--pink-d);margin:0}
+header.top{background:var(--ink);color:#fff;position:sticky;top:0;z-index:50}
+header.top .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1rem;padding-top:.5rem;padding-bottom:.5rem}
+.logo{font-family:var(--serif);font-size:1.7rem;font-weight:700;color:#fff;text-decoration:none;letter-spacing:.08em}
+nav ul{list-style:none;display:flex;flex-wrap:wrap;gap:.25rem;margin:0;padding:0}
+nav a{display:inline-block;color:#fff;text-decoration:none;padding:.65rem .9rem;min-height:44px;border-radius:8px}
+nav a:hover{background:#fff;color:var(--ink)}
+.hero{text-align:center;padding:4rem 0 3rem}
+.eyebrow{letter-spacing:.2em;text-transform:uppercase;font-size:.95rem;margin:0 0 .5rem}
+.hero p.lead{max-width:40rem;margin:1rem auto 2rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.7rem 1.6rem;border-radius:999px;border:2px solid var(--ink);background:var(--ink);color:#fff;font:600 1.05rem var(--body);text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--pink);color:var(--ink)}
+.btn.alt{background:transparent;color:var(--ink)}
+.btn.alt:hover{background:var(--ink);color:#fff}
+section{padding:3.5rem 0}
+.band{background:var(--beige-l)}
+.grid{display:grid;gap:1.5rem;margin-top:2rem}
+.g3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--white);border-radius:14px;padding:1.5rem;box-shadow:0 2px 10px rgba(59,36,22,.12)}
+.card.pink{background:var(--pink)}
+.taupe{background:var(--taupe);color:var(--ink);padding:1.5rem;border-radius:12px}
+.photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin:1.5rem 0 0;padding:0;list-style:none}
+.photos figure{margin:0;background:#fff;padding:.6rem .6rem 1rem;border-radius:6px;box-shadow:0 3px 10px rgba(59,36,22,.2)}
+.photos img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:3px}
+.photos figcaption{font-size:.95rem;text-align:center;margin-top:.6rem}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden}
+caption{text-align:left;padding:.8rem 1rem;font-weight:600}
+th,td{padding:.9rem 1rem;text-align:left}
+thead th{background:var(--ink);color:#fff}
+tbody tr:nth-child(odd){background:var(--pink)}
+.shop{display:grid;gap:2rem;grid-template-columns:1fr}
+@media(min-width:900px){.shop{grid-template-columns:1.2fr 1fr}}
+.item{display:grid;grid-template-columns:1fr auto;gap:.5rem 1rem;align-items:center;background:#fff;border-radius:12px;padding:1rem 1.2rem;margin-bottom:.8rem}
+.item p{margin:0}
+.price{font-weight:600;color:var(--pink-d)}
+.qty{display:flex;align-items:center;gap:.4rem}
+.qty button{width:44px;height:44px;border-radius:50%;border:2px solid var(--ink);background:#fff;font-size:1.4rem;line-height:1;cursor:pointer;color:var(--ink)}
+.qty button:hover{background:var(--pink)}
+.qty output{min-width:2.2rem;text-align:center;font-weight:600;font-size:1.2rem}
+form label{display:block;font-weight:600;margin:1rem 0 .3rem}
+form input,form textarea{width:100%;min-height:48px;padding:.7rem .9rem;border:2px solid var(--ink);border-radius:10px;font:inherit;background:#fff;color:var(--ink)}
+.hint{font-size:.95rem;margin:.2rem 0 0}
+.total{font-family:var(--serif);font-size:2rem;font-weight:700;margin:1rem 0 0}
+.err{color:#9b1c1c;font-weight:600;min-height:1.5rem}
+.loc{display:grid;gap:2rem;grid-template-columns:1fr;align-items:start}
+@media(min-width:900px){.loc{grid-template-columns:1fr 1fr}}
+.map{width:100%;height:340px;border:0;border-radius:12px}
+address{font-style:normal}
+footer{background:var(--ink);color:#fff;text-align:center;padding:2rem 1rem}
+footer a{color:#fbdde7}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+@media(forced-colors:active){.btn,.qty button{border:2px solid ButtonText}}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido principal</a>
+
+<header class="top">
+ <div class="wrap">
+  <a class="logo" href="#inicio" aria-label="PARCHA2, ir al inicio">PARCHA<sup>2</sup></a>
+  <nav aria-label="Navegación principal">
+   <ul>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#catalogo">Catálogo</a></li>
+    <li><a href="#comprar">Comprar</a></li>
+    <li><a href="#ubicacion">Ubicación</a></li>
+   </ul>
+  </nav>
+ </div>
+</header>
+
+<main id="contenido">
+ <section class="hero" id="inicio" aria-labelledby="t-inicio">
+  <div class="wrap">
+   <p class="eyebrow">Propuesta de negocio · Camacho Carreño</p>
+   <h1 id="t-inicio">PARCHA<sup>2</sup></h1>
+   <p class="script">Regalos que van a mil</p>
+   <p class="lead">Regalos personalizados con temática de Fórmula 1 y Sanrio, hechos con detalle por estudiantes de grado 11 de la Institución Educativa Camacho Carreño.</p>
+   <a class="btn" href="#comprar">Hacer mi pedido</a>
+   <a class="btn alt" href="#catalogo">Ver catálogo</a>
+  </div>
+ </section>
+
+ <section class="band" id="nosotros" aria-labelledby="t-nos">
+  <div class="wrap">
+   <h2 id="t-nos">Sobre nosotros</h2>
+   <div class="grid g3">
+    <div class="card">
+     <h3>Quiénes somos</h3>
+     <p>Somos un grupo de estudiantes de undécimo grado de la Institución Educativa Camacho Carreño, apasionados por la creatividad, el diseño, los dibujos animados y el deporte motor.</p>
+    </div>
+    <div class="card pink">
+     <h3>La magia de los detalles</h3>
+     <p>Muchas personas no saben qué regalar en fechas especiales y terminan comprando regalos genéricos. Queremos que tengas accesorios que muestren lo que te apasiona y que además se vean bien en tu cuarto.</p>
+    </div>
+    <div class="card">
+     <h3>Nuestro objetivo</h3>
+     <p>Ser una opción de regalo personalizado, creativa y accesible en el entorno estudiantil y juvenil de la ciudad, con entregas en máximo 5 días hábiles.</p>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <section id="catalogo" aria-labelledby="t-cat">
+  <div class="wrap">
+   <h2 id="t-cat">Catálogo</h2>
+   <p style="text-align:center;max-width:42rem;margin:1rem auto 0">Compramos Hot Wheels, figuras y dijes originales. Nuestro valor está en el diseño de los empaques, los cuadros de fondo y el ensamble personalizado.</p>
+
+   <h3 style="margin-top:2.5rem">Línea Motor (F1)</h3>
+   <ul class="photos">
+    <li><figure><img src="images/llavero-f1-ferrari.jpg" alt="Carrito de Fórmula 1 rojo estilo Ferrari convertido en llavero, colgado de un morral negro" loading="lazy"><figcaption>Llavero carrito Ferrari</figcaption></figure></li>
+    <li><figure><img src="images/llavero-red-bull.jpg" alt="Carrito de F1 Red Bull azul oscuro con argolla de llavero sobre una superficie gris" loading="lazy"><figcaption>Llavero carrito Red Bull</figcaption></figure></li>
+    <li><figure><img src="images/llaveros-escuderias.jpg" alt="Llaveros acrílicos con logos de escuderías: Ferrari, Mercedes, Williams, Aston Martin, Alpine y McLaren" loading="lazy"><figcaption>Llaveros de escuderías</figcaption></figure></li>
+    <li><figure><img src="images/llaveros-radio-f1.jpg" alt="Cuatro llaveros con mensajes de radio de pilotos de F1 en tonos azules y negros" loading="lazy"><figcaption>Llaveros «Team Radio»</figcaption></figure></li>
+    <li><figure><img src="images/llavero-snoopy-f1.jpg" alt="Llavero con carrito rojo, Snoopy, bandera de F1 y una llave decorada" loading="lazy"><figcaption>Llavero Snoopy en F1</figcaption></figure></li>
+   </ul>
+
+   <h3 style="margin-top:2.5rem">Línea Sanrio</h3>
+   <ul class="photos">
+    <li><figure><img src="images/llaveros-sanrio.jpg" alt="Llaveros de personajes Sanrio como Hello Kitty, Pompompurin, Pochacco y Kuromi con correas de colores" loading="lazy"><figcaption>Llaveros de personajes</figcaption></figure></li>
+    <li><figure><img src="images/sacapuntas-hello-kitty.jpg" alt="Sacapuntas de Hello Kitty en caja transparente rosada con la frase Good Luck" loading="lazy"><figcaption>Sacapuntas Hello Kitty</figcaption></figure></li>
+    <li><figure><img src="images/stickers-hello-kitty.jpg" alt="Caja de 60 stickers de Hello Kitty con varios stickers regados" loading="lazy"><figcaption>Stickers Hello Kitty</figcaption></figure></li>
+    <li><figure><img src="images/pinzas-hello-kitty.jpg" alt="Pinzas y ganchos rosados para el cabello con forma de Hello Kitty, moño y estrellas" loading="lazy"><figcaption>Pinzas para el cabello</figcaption></figure></li>
+   </ul>
+
+   <h3 style="margin-top:2.5rem">Cajas Regalo</h3>
+   <p>Combos armados a medida con mensajes especiales, según el gusto, la fecha y el mensaje que quieras transmitir.</p>
+
+   <div style="margin-top:2rem">
+    <table>
+     <caption>Precios de referencia (COP)</caption>
+     <thead><tr><th scope="col">Categoría</th><th scope="col">Precio</th></tr></thead>
+     <tbody>
+      <tr><th scope="row">Stickers / papelería / accesorios</th><td>Desde $2.000</td></tr>
+      <tr><th scope="row">Llaveros (F1 / personajes)</th><td>$12.000 – $20.000</td></tr>
+      <tr><th scope="row">Ediciones especiales (San Valentín)</th><td>$15.000 – $25.000</td></tr>
+      <tr><th scope="row">Kits escolares Sanrio</th><td>$25.000</td></tr>
+      <tr><th scope="row">Cajas regalo (sorpresa / combos)</th><td>Desde $35.000</td></tr>
+     </tbody>
+    </table>
+   </div>
+  </div>
+ </section>
+
+ <section class="band" id="comprar" aria-labelledby="t-comp">
+  <div class="wrap">
+   <h2 id="t-comp">Comprar</h2>
+   <p style="text-align:center;max-width:42rem;margin:1rem auto 2rem">Elige tus productos, completa tus datos y envía el pedido por WhatsApp. Te confirmamos el valor final y la entrega (máximo 5 días hábiles).</p>
+   <div class="shop">
+    <div>
+     <h3 id="t-prod">1. Elige tus productos</h3>
+     <div id="items" role="group" aria-labelledby="t-prod"></div>
+     <p class="hint">Precios desde. Los productos personalizados pueden variar y se confirman antes de pagar. Combo Parejas / Amigos: pregunta por el descuento al llevar un artículo de carreras y uno de Sanrio. Todo pedido incluye un sticker temático de regalo.</p>
+    </div>
+    <div>
+     <form id="pedido" novalidate aria-labelledby="t-form">
+      <h3 id="t-form">2. Tus datos</h3>
+      <div class="taupe" aria-live="polite" aria-atomic="true">
+       <strong>Tu pedido:</strong>
+       <p id="resumen" style="margin:.3rem 0">Aún no has agregado productos.</p>
+       <p class="total">Total estimado: <span id="total">$0</span></p>
+      </div>
+      <label for="nombre">Nombre completo</label>
+      <input id="nombre" name="nombre" type="text" autocomplete="name" required aria-describedby="err">
+      <label for="curso">Curso o lugar de entrega</label>
+      <input id="curso" name="curso" type="text" placeholder="Ej: 10-2, en el colegio" required aria-describedby="err">
+      <label for="msg">Mensaje o personalización (opcional)</label>
+      <textarea id="msg" name="msg" rows="3" placeholder="Personaje, escudería, fecha especial, texto de la dedicatoria…"></textarea>
+      <p id="err" class="err" role="alert"></p>
+      <button class="btn" type="submit">Enviar pedido por WhatsApp</button>
+     </form>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <section id="ubicacion" aria-labelledby="t-ub">
+  <div class="wrap">
+   <h2 id="t-ub">Dónde encontrarnos</h2>
+   <div class="loc" style="margin-top:2rem">
+    <div>
+     <img src="images/colegio.jpg" alt="Vista aérea de la Institución Educativa Camacho Carreño: edificio de ladrillo rojo con patio central y techos blancos" style="border-radius:12px;width:100%" loading="lazy">
+     <address class="card" style="margin-top:1rem">
+      <h3>Institución Educativa Camacho Carreño</h3>
+      <p>Carreras 8 y 9, entre calles 37 y 41<br>Bucaramanga, Santander, Colombia</p>
+      <p><strong>Teléfono / WhatsApp:</strong> <a id="tel" href="tel:+573000000000">+57 300 000 0000</a></p>
+      <p><strong>Lanzamiento físico:</strong> stand en la Feria de Emprendimiento institucional.</p>
+      <p><strong>Pedidos personalizados:</strong> por Instagram y TikTok, entregados en el colegio.</p>
+     </address>
+    </div>
+    <div>
+     <iframe class="map" title="Mapa de la ubicación de la Institución Educativa Camacho Carreño en Bucaramanga" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Instituci%C3%B3n+Educativa+Camacho+Carre%C3%B1o+Bucaramanga&amp;output=embed"></iframe>
+     <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Instituci%C3%B3n+Educativa+Camacho+Carre%C3%B1o+Bucaramanga" target="_blank" rel="noopener">Abrir en Google Maps (se abre en una pestaña nueva)</a></p>
+    </div>
+   </div>
+  </div>
+ </section>
+</main>
+
+<footer>
+ <p class="script" style="color:#fbdde7;font-size:2.4rem">Regalos que van a mil</p>
+ <p>PARCHA2 · Institución Educativa Camacho Carreño, grado 11 · Bucaramanga</p>
+ <p>Harold Segura · Camila Báez · Sara Flores · Adolfo Rojas · Sebastián Valencia</p>
+</footer>
+
+<noscript><p style="padding:1rem;background:#fff;text-align:center">Para armar tu pedido necesitas activar JavaScript, o escríbenos directamente por WhatsApp.</p></noscript>
+
+<script>
+// ===== CONFIGURA AQUÍ =====
+const WHATSAPP = "573000000000";            // número con indicativo 57, sin + ni espacios
+const PRODUCTOS = [
+  {id:"stickers", nombre:"Stickers / papelería / accesorios", precio:2000},
+  {id:"llavero",  nombre:"Llavero F1 o personaje", precio:12000},
+  {id:"especial", nombre:"Edición especial (San Valentín)", precio:15000},
+  {id:"kit",      nombre:"Kit escolar Sanrio", precio:25000},
+  {id:"caja",     nombre:"Caja regalo (sorpresa / combo)", precio:35000},
+];
+// ==========================
+const cop = n => "$" + n.toLocaleString("es-CO");
+const cant = {};
+const cont = document.getElementById("items");
+PRODUCTOS.forEach(p=>{
+  cant[p.id]=0;
+  const d=document.createElement("div"); d.className="item";
+  d.innerHTML=`<div><p><strong id="n-${p.id}">${p.nombre}</strong></p><p class="price">Desde ${cop(p.precio)}</p></div>
+  <div class="qty" role="group" aria-labelledby="n-${p.id}">
+   <button type="button" data-id="${p.id}" data-d="-1" aria-label="Quitar uno de ${p.nombre}">−</button>
+   <output id="q-${p.id}" aria-live="polite">0</output>
+   <button type="button" data-id="${p.id}" data-d="1" aria-label="Agregar uno de ${p.nombre}">+</button>
+  </div>`;
+  cont.appendChild(d);
+});
+cont.addEventListener("click",e=>{
+  const b=e.target.closest("button[data-id]"); if(!b) return;
+  const id=b.dataset.id; cant[id]=Math.max(0,Math.min(20,cant[id]+Number(b.dataset.d)));
+  document.getElementById("q-"+id).textContent=cant[id]; render();
+});
+function lineas(){return PRODUCTOS.filter(p=>cant[p.id]>0)}
+function total(){return lineas().reduce((s,p)=>s+p.precio*cant[p.id],0)}
+function render(){
+  const l=lineas();
+  document.getElementById("resumen").textContent = l.length ? l.map(p=>`${cant[p.id]} × ${p.nombre}`).join("; ") : "Aún no has agregado productos.";
+  document.getElementById("total").textContent = cop(total());
+}
+document.getElementById("pedido").addEventListener("submit",e=>{
+  e.preventDefault();
+  const nombre=document.getElementById("nombre"), curso=document.getElementById("curso"), err=document.getElementById("err");
+  if(!lineas().length){err.textContent="Agrega al menos un producto antes de enviar.";return}
+  if(!nombre.value.trim()){err.textContent="Escribe tu nombre.";nombre.focus();return}
+  if(!curso.value.trim()){err.textContent="Escribe tu curso o lugar de entrega.";curso.focus();return}
+  err.textContent="";
+  const msg=document.getElementById("msg").value.trim();
+  const texto=`Hola PARCHA2 👋 Quiero hacer un pedido:\n`+lineas().map(p=>`• ${cant[p.id]} × ${p.nombre}`).join("\n")+
+   `\nTotal estimado: ${cop(total())}\nNombre: ${nombre.value.trim()}\nCurso/entrega: ${curso.value.trim()}`+(msg?`\nPersonalización: ${msg}`:"");
+  window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(texto)}`,"_blank","noopener");
+});
+// teléfono visible
+const t=document.getElementById("tel"); t.href="tel:+"+WHATSAPP;
+t.textContent="+"+WHATSAPP.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})$/,"$1 $2 $3 $4");
+</script>
+</body>
+</html>
